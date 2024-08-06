@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  height: 85vh;
+  background-image: url("./assests/images/background_image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main .box {
+  height: 85vh;
+  width: 100%;
+  opacity: 0.69;
+  position: absolute;
+  background-color: black;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  max-width: 80vw;
+
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 63px;
+}
+
+nav img {
+  width: 120px;
+  position: relative;
+  z-index: 30;
+  /* Use a red border instead of a background */
+}
+
+nav button {
+  position: relative;
+  z-index: 30;
+}
+
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  height: calc(100% - 63px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+}
+
+.hero > :first-child,
+.hero > :nth-child(2) {
+  font-family: "poppins";
+  font-size: 48px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.input-class {
+  height: 60px;
+  padding-left: 10px;
+  background-color: black;
+  opacity: 0.7;
+  border: white solid 0.5px;
+  border-radius: 5px;
+  color: white;
+  width: 400px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.btn {
+  padding: 6px 30px;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.733);
+  font-weight: bolder;
+  border-radius: 6px;
+  opacity: 0.7;
+  border: rgba(255, 255, 255, 0.793) solid 0.5px;
+  margin: 0px 10px;
+}
+
+.red-sm {
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  padding: 6px 15px;
+  font-weight: bolder;
+}
+
+.red-btn {
+  height: 60px;
+  border-radius: 5px;
+  width: 200px;
+  font-weight: 900;
+  font-size: 20px;
+  border: none;
+  color: rgb(255, 255, 255);
+  margin-left: 0.7vw;
+  background-color: rgba(255, 0, 0, 0.986);
+}
+
+.separation {
+  height: 8px;
+  background-color: rgba(103, 101, 101, 0.573);
+}
+
+.first {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  margin-top: 10vw;
+  margin: 30px auto;
+}
+
+.secImg {
+  position: relative;
+}
+.secImg img {
+  width: 30vw;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video {
+  width: 100%;
+
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+
+.first > div :first-child {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.first > div :nth-child(2) {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.first > div :nth-child(3) {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.faq {
+  color: white;
+  padding: 34px;
+}
+
+.faq h2 {
+  text-align: center;
+}
+
+.faq-box {
+  background-color: rgb(99, 93, 93);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  width: 70vw;
+}
+
+.faq-box span,
+p {
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.faq .email-cls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
+
+.footer-items a {
+  color: white;
+}
+.footer-items {
+  display: grid;
+  width: 70vw;
+  margin: 5vw auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: normal;
+  row-gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Styles for screens with a maximum width of 768 pixels */
+  /* These styles will apply to devices like laptops, tablets, and smartphones */
+  .hero div,
+  .email-cls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero input,
+  .email-cls input {
+    margin: 15px;
+  }
+}
